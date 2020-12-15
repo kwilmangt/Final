@@ -9,8 +9,6 @@ let speed = 100
 let size = 24
 let headX = 25
 let headY = 25
-let headX2 = 0
-let headY2 = 0
 let dotX = 112.5
 let dotY = 112.5
 let moveLeftHandler
@@ -35,8 +33,6 @@ function draw() {
     fill(1)
     noStroke()
    
-  
-  
   for (let i = 0; i < trail.length; i++){
         
         square(trail[i].x, trail[i].y, size)
@@ -53,8 +49,6 @@ function draw() {
     if (goingDown == true && trail[i].x == headX && trail[i].y -25== headY ){
         reset()
     }
-
-
 }
 if (headX === dotX-12.5 && headY === dotY-12.5){
         score ++
@@ -68,7 +62,6 @@ trail.push({x:headX, y:headY})
   while(trail.length>tail){
     trail.shift()
   }
-
 
     if (headX < 0 || headX > 600 || headY > 600 || headY < 0) {
         reset()
