@@ -1,0 +1,16 @@
+body {
+    background-color: blue;
+}
+h1 {
+    color: white;
+    text-decoration: underline;
+}
+h2 {
+    color: white;
+    display: inline;
+}
+h3 {
+    color: white;
+    display: inline;
+   
+}
